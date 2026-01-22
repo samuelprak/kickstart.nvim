@@ -358,10 +358,7 @@ require('lazy').setup({
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
-<<<<<<< HEAD
     branch = 'master',
-=======
->>>>>>> upstream/master
     dependencies = {
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
@@ -887,21 +884,6 @@ require('lazy').setup({
         providers = {
           lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
         },
-<<<<<<< HEAD
-        sources = {
-          {
-            name = 'lazydev',
-            -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
-            group_index = 0,
-          },
-          { name = 'copilot', group_index = 2, keyword_length = 0 },
-          { name = 'nvim_lsp', group_index = 2 },
-          { name = 'luasnip', group_index = 2 },
-          { name = 'path', group_index = 2 },
-        },
-      }
-    end,
-=======
       },
 
       snippets = { preset = 'luasnip' },
@@ -918,7 +900,6 @@ require('lazy').setup({
       -- Shows a signature help window while you type arguments for a function
       signature = { enabled = true },
     },
->>>>>>> upstream/master
   },
 
   { -- You can easily change to a different colorscheme.
