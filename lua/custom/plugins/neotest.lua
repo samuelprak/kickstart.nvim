@@ -8,11 +8,9 @@ return {
     'marilari88/neotest-vitest',
   },
   config = function()
-    neotest = require('neotest').setup {
+    require('neotest').setup {
       adapters = {
-        require 'neotest-vitest' {
-          vitestCommand = 'npx vitest',
-        },
+        require 'neotest-vitest',
       },
     }
   end,
